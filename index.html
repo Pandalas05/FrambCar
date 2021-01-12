@@ -7,33 +7,38 @@
     <title>Main</title>
   </head>
   <body>
-    <div class="container-top">
-      <div class="topBar"> <!-- hour, battery, bt, wifi-->
-        <p>topBar</p>        
+      <div class="container-top"> <!-- header maybe ? -->
+        <div class="topBar"> <!-- hour, battery, bt, wifi-->
+          <p>topBar</p>
+        </div>
       </div>
-    </div>
-    <div class="container-mid">
-      <div class="GPS">
-        <p>GPS</p>
-      </div>
-      <div class="deezer item">
-        <p>Deezer</p>
-      </div>
-      <div class="youtube item item-extra">
-        <p>Youtube</p>
-      </div>
-    </div>
-    <div class="container-bottom">
-      <div class="sensors">
-        <p>Sensors</p>
-      </div>
-      <div class="weather">
-        <p>weather</p>
-      </div>
-      <div class="radio"> <!--radio and web radio -->
-        <p>Radio</p>
-      </div>
-    </div>
 
+      <main class="main flexRow">
+      <div class="container-left flexColumn">
+        <div class="GPS bigBox">
+          <p>GPS</p>
+        </div>
+        <div class="flexRow">
+          <div class="sensors boxLeft">
+            <p>Sensors</p>
+          </div>
+          <div class="weather boxLeft">
+            <p>weather</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-right">
+        <div class="deezer boxRight">
+          <p>Deezer</p>
+        </div>
+        <div class="youtube boxRight">
+          <p>Youtube</p>
+        </div>
+        <div class="radio boxRight"> <!--radio and web radio -->
+          <p>Radio</p>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

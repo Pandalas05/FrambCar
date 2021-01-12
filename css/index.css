@@ -17,74 +17,79 @@ p {
     "sensors weather radio";
 }*/
 
+.main {
+  height: auto;
+  width: 100%;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  flex-wrap: wrap;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  flex-wrap: wrap;
+}
+
 .container-top {
   display: flex;
-  height: 10vh;
-}
-
-.container-mid {
-  display: flex;
-  height: 60vh;
-  width: 100%;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-around;
+  height: auto;
 }
 
-.container-bottom {
-  display: flex;
-  height: 30vh;
+.container-left {
+  height: 100%;
+  width: 70%;
+}
+
+.container-right {
+  height: 100%;
+  width: 30%;
+}
+
+.bigBox {
+  height: 66.67vh; width: 100%;
+}
+
+.boxLeft {
+  height: 33.33vh; width: 50%;
+}
+
+.boxRight {
+  height: 33.33vh; width: 100%;
 }
 
 .topBar {
   background-color: lightblue;
-  flex: 1;
-  /*grid-area: topBar;*/
 }
 
 .GPS {
   background-color: orange;
-  order: 1;
-  flex: 1 0 99%;
-  width: 66%;
-  /*grid-area: GPS;*/
 }
 
 .deezer {
   background-color: black;
-  /*grid-area: deezer;*/
-}
-
-.item {
-  order: 2;
-  flex: 1 0 50%;
-  width: 34%;
 }
 
 .youtube {
   background-color: red;
-  /*grid-area: youtube;*/
 }
 
-.item-extra {
-  order: 3;
-  flex: 1  0 50%;
-}
 
 .sensors {
   background-color: grey;
-  flex: 1;
-  /*grid-area: sensors;*/
 }
 
 .weather {
   background-color: blue;
-  flex: 1;
-  /*grid-area: weather;*/
 }
 
 .radio {
   background-color: lightgreen;
-  flex: 1;
-  /*grid-area: radio;*/
 }
